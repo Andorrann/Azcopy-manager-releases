@@ -1,0 +1,6 @@
+# Ignore executables
+*.exe
+
+# Ignore release files
+*.msi
+*.zip
