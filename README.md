@@ -2,14 +2,14 @@
 
 **Simplify your PST file imports to Microsoft 365 with this powerful desktop application.**
 
-[![Latest Release](https://img.shields.io/github/v/release/YOUR_USERNAME/PST-IMPORT-RELEASES)](https://github.com/YOUR_USERNAME/PST-IMPORT-RELEASES/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/YOUR_USERNAME/PST-IMPORT-RELEASES/total)](https://github.com/YOUR_USERNAME/PST-IMPORT-RELEASES/releases)
+[![Latest Release](https://img.shields.io/github/v/release/Andorann/PST-IMPORT-RELEASES)](https://github.com/Andorann/PST-IMPORT-RELEASES/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Andorann/PST-IMPORT-RELEASES/total)](https://github.com/Andorann/PST-IMPORT-RELEASES/releases)
 
 ---
 
 ## 📥 Download
 
-**[⬇️ Download Latest Version (v1.1.0)](https://github.com/YOUR_USERNAME/PST-IMPORT-RELEASES/releases/latest)**
+**[⬇️ Download Latest Version (v1.1.0)](https://github.com/Andorann/PST-IMPORT-RELEASES/releases/latest)**
 
 **System Requirements:**
 - Windows 10 or Windows 11
@@ -64,7 +64,7 @@
 ## 🚀 Quick Start
 
 ### 1. Download & Install
-Download `PST-Import-Tool-Setup.exe` from the [latest release](https://github.com/YOUR_USERNAME/PST-IMPORT-RELEASES/releases/latest) and run the installer.
+Download `PST-Import-Tool-Setup.exe` from the [latest release](https://github.com/Andorann/PST-IMPORT-RELEASES/releases/latest) and run the installer.
 
 ### 2. Get Your SAS URL
 1. Go to [Microsoft Purview Compliance Portal](https://compliance.microsoft.com)
@@ -189,7 +189,6 @@ Large PST files (>10 GB) can take several hours.
 - This tool is provided **as-is** without warranties
 - No data is collected or sent to third parties
 - All PST files are uploaded directly to **your** Microsoft-managed Azure storage
-- Logs are stored **locally** on your computer only
 
 ---
 
@@ -201,15 +200,6 @@ Large PST files (>10 GB) can take several hours.
 
 ---
 
-## 📞 Support
-
-For technical support:
-1. Check the application logs
-2. Review the FAQ above
-3. Consult [Microsoft Documentation](https://learn.microsoft.com/en-us/purview/import-pst-files)
-4. Contact your IT administrator
-
----
 
 **⚠️ Important**: This is a community tool and is not officially affiliated with or supported by Microsoft Corporation. Microsoft, Microsoft 365, Purview, and Exchange are trademarks of Microsoft Corporation.
 
