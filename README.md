@@ -2,14 +2,14 @@
 
 **Simplify your PST file imports to Microsoft 365 with this powerful desktop application.**
 
-[![Latest Release](https://img.shields.io/github/v/release/Andorann/PST-IMPORT-RELEASES)](https://github.com/Andorann/PST-IMPORT-RELEASES/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/Andorann/PST-IMPORT-RELEASES/total)](https://github.com/Andorann/PST-IMPORT-RELEASES/releases)
+[![Latest Release](https://img.shields.io/github/v/release/Andorrann/pst-import-releases)](https://github.com/Andorrann/pst-import-releases/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Andorrann/pst-import-releases/total)](https://github.com/Andorrann/pst-import-releases/releases)
 
 ---
 
 ## 📥 Download
 
-**[⬇️ Download Latest Version (v1.1.0)](https://github.com/Andorann/PST-IMPORT-RELEASES/releases/latest)**
+**[⬇️ Download Latest Version (v1.1.0)](https://github.com/Andorrann/pst-import-releases/releases/latest)**
 
 **System Requirements:**
 - Windows 10 or Windows 11
@@ -19,52 +19,22 @@
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-### 🔍 **Smart PST Discovery**
-- Automatically scans common locations for PST files
-- Manual folder selection and file browsing
-- Displays file sizes and paths
-
-### ☁️ **Azure Upload**
-- Integrated AzCopy for fast, reliable uploads
-- Real-time progress tracking
-- Automatic retry on failure
-- Cancel uploads at any time
-
-### ⚙️ **Easy Configuration**
-- Visual PST-to-mailbox mapping
-- Support for primary mailboxes and archives
-- Custom target folder paths
-- Bulk configuration options
-
-### 📊 **CSV Generation**
-- Automatic creation of Microsoft-compatible CSV mapping files
-- Preview before export
-- Saves configuration for reuse
-
-### 🔐 **Permission Management**
-- Built-in permission checker
-- Step-by-step setup guide
-- Direct links to Microsoft portals
-- SAS URL validation
-
-### 🆕 **Auto-Update (v1.1.0)**
-- Checks for updates on startup
-- One-click download
-- View complete changelog
-
-### 🎨 **Modern Interface**
-- Dark theme optimized for productivity
-- Intuitive workflow
-- Detailed logging and error messages
+- **🔍 Smart PST Discovery** - Auto-scan common locations or browse manually
+- **☁️ Azure Upload** - Fast AzCopy integration with real-time progress
+- **🔐 Credential Manager** - Save and reuse SAS URLs securely (encrypted)
+- **📊 Microsoft CSV** - Auto-generate Purview-compatible mapping files
+- **🎨 Modern Interface** - Splash screen, professional icons, silent background operations
+- **⚙️ Easy Mapping** - Visual configuration for mailboxes and archives
+- **🔒 Permission Check** - Built-in validator with step-by-step setup guide
 
 ---
 
 ## 🚀 Quick Start
 
 ### 1. Download & Install
-Download `PST-Import-Tool-Setup.exe` from the [latest release](https://github.com/Andorann/PST-IMPORT-RELEASES/releases/latest) and run the installer.
+Download `PST-Import-Tool-Setup.exe` from the [latest release](https://github.com/Andorrann/pst-import-releases/releases/latest) and run the installer.
 
 ### 2. Get Your SAS URL
 1. Go to [Microsoft Purview Compliance Portal](https://compliance.microsoft.com)
@@ -105,25 +75,19 @@ The application includes a comprehensive setup guide accessible via:
 
 ## 🔄 What's New in v1.1.0
 
-### ✨ Major Updates
-- **Automatic update checker** with notifications
-- **Help & Updates tab** with version info and changelog
-- **Permission dashboard** showing real-time status
-- **Modern permissions guide** with direct portal links
+### ✨ New Features
+- **Splash Screen** - Animated loading screen with progress bar
+- **Professional Icons** - Visible in app, taskbar, shortcuts, and installer
+- **Credential Manager** - Save/reuse SAS URLs with AES-256 encryption
+- **Modern Dialogs** - Redesigned upload confirmation and completion
+- **Silent Operations** - No CMD windows during uploads or Azure operations
 
-### 🐛 Fixes
-- Fixed SAS permission detection (now correctly identifies Write/Add/Create/List)
-- Removed delete functionality (not available on temp storage)
-- Fixed crashes after locking PST selections
-- Corrected Azure storage documentation
+### 🐛 Bug Fixes
+- CSV format now matches Microsoft Purview template exactly
+- "Use Selected" credential properly loads and validates URL
+- Automatic validation after loading saved credentials
 
-### 🎨 UI Improvements
-- Better color coding (Green/Orange/Red status)
-- Explicit permission names instead of abbreviations
-- Centered status messages with modern fonts
-- Tooltips instead of modal popups
-
-[View Complete Changelog](CHANGELOG.md)
+[View Complete Changelog](https://github.com/Andorrann/PST-IMPORT-TOOL-O365/blob/main/CHANGELOG.md)
 
 ---
 
@@ -189,6 +153,7 @@ Large PST files (>10 GB) can take several hours.
 - This tool is provided **as-is** without warranties
 - No data is collected or sent to third parties
 - All PST files are uploaded directly to **your** Microsoft-managed Azure storage
+- Logs are stored **locally** on your computer only
 
 ---
 
@@ -200,6 +165,15 @@ Large PST files (>10 GB) can take several hours.
 
 ---
 
+## 📞 Support
+
+For technical support:
+1. Check the application logs
+2. Review the FAQ above
+3. Consult [Microsoft Documentation](https://learn.microsoft.com/en-us/purview/import-pst-files)
+4. Contact your IT administrator
+
+---
 
 **⚠️ Important**: This is a community tool and is not officially affiliated with or supported by Microsoft Corporation. Microsoft, Microsoft 365, Purview, and Exchange are trademarks of Microsoft Corporation.
 
