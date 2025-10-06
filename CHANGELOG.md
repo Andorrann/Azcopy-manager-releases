@@ -1,6 +1,29 @@
-# Changelog - PST Import Tool
+# Changelog - AzCopy Manager
 
-All notable changes to the PST Import Tool will be documented in this file.
+All notable changes to AzCopy Manager will be documented in this file.
+
+---
+
+## Version 1.1.1
+
+**Release Date**: 2025-10-06
+
+### 🎨 Rebranding
+- **Application renamed**: "PST Import Tool for Purview" → **"AzCopy Manager"**
+- **Updated branding**: More focus on AzCopy technology and clearer naming
+- **New repository**: Moved to `Azcopy-manager` (code) and `Azcopy-manager-releases` (releases)
+- **Updated paths**: Application data folder renamed from `PSTImportTool` to `AzCopyManager`
+
+### 🐛 Bug Fixes
+- **Fixed Windows Start Menu Icon**: Icon now displays correctly in Windows Start Menu instead of default disk icon
+- **Updated Update System**: All update URLs now point to new `Azcopy-manager-releases` repository
+
+### 🎨 UI/UX Improvements
+- **Modern "Check for Updates" Dialog**: 
+  - Centered text layout with modern Segoe UI font
+  - Version number displayed larger (24pt) and more prominently
+  - "You're Up to Date!" message is bigger and centered (16pt)
+  - Cleaner, more professional appearance
 
 ---
 
@@ -96,12 +119,12 @@ This project uses [Semantic Versioning](https://semver.org/):
 
 ## How to Update
 
-1. Download the latest installer from [Releases](https://github.com/YOUR_USERNAME/PST-IMPORT-RELEASES/releases)
+1. Download the latest installer from [Releases](https://github.com/Andorrann/Azcopy-manager-releases/releases)
 2. Close the current application
-3. Run `PST-Import-Tool-Setup.exe`
+3. Run `AzCopy-Manager-Setup-v1.1.1.exe` (or latest version)
 4. Follow the installation wizard
 5. Launch the updated application
 
 ---
 
-**Need Help?** Check the [Permissions Setup Guide](https://github.com/YOUR_USERNAME/PST-IMPORT-RELEASES) or visit the [Microsoft Documentation](https://learn.microsoft.com/en-us/purview/use-network-upload-to-import-pst-files).
+**Need Help?** Check the [Main Repository](https://github.com/Andorrann/Azcopy-manager) or visit the [Microsoft Documentation](https://learn.microsoft.com/en-us/purview/use-network-upload-to-import-pst-files).

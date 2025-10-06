@@ -1,103 +1,73 @@
-# PST Import Tool for Microsoft Purview
+# AzCopy Manager
 
-**Simplify your PST file imports to Microsoft 365 with this powerful desktop application.**
+**A user-friendly desktop application that automates PST file migration to Microsoft 365 Purview using AzCopy technology.**
 
-[![Latest Release](https://img.shields.io/github/v/release/Andorrann/pst-import-releases)](https://github.com/Andorrann/pst-import-releases/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/Andorrann/pst-import-releases/total)](https://github.com/Andorrann/pst-import-releases/releases)
+This tool simplifies the complex process of uploading PST files to Microsoft's cloud storage and generating the required mapping files for Purview import jobs.
+
+[![Latest Release](https://img.shields.io/github/v/release/Andorrann/Azcopy-manager-releases)](https://github.com/Andorrann/Azcopy-manager-releases/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Andorrann/Azcopy-manager-releases/total)](https://github.com/Andorrann/Azcopy-manager-releases/releases)
 
 ---
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/6a7818bc-fdec-4f99-a026-7804aae55470" alt="Preview 1" width="800">
-</p>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/acb85377-3da0-4abe-b865-c13ff0a14ec6" alt="Preview 2" width="800">
-</p>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/32ddceed-9e28-42ae-a86b-a154c5980068" alt="Preview 3" width="800">
-</p>
-
 ## 📥 Download
 
-**[⬇️ Download Latest Version (v1.1.0)](https://github.com/Andorrann/pst-import-releases/releases/latest)**
+**[⬇️ Download Latest Version (v1.1.1)](https://github.com/Andorrann/Azcopy-manager-releases/releases/latest)**
 
 **System Requirements:**
-- Windows 10 or Windows 11
-- .NET Framework 4.7.2 or higher (usually pre-installed)
+- Windows 10 or Windows 11 (64-bit)
+- .NET Framework 4.7.2+ (usually pre-installed)
 - Internet connection
 - Microsoft 365 subscription with Purview
 
 ---
 
-## ✨ Key Features
+## ✅ What This Software DOES
 
-- **🔍 Smart PST Discovery** - Auto-scan common locations or browse manually
-- **☁️ Azure Upload** - Fast AzCopy integration with real-time progress
-- **🔐 Credential Manager** - Save and reuse SAS URLs securely (encrypted)
-- **📊 Microsoft CSV** - Auto-generate Purview-compatible mapping files
-- **🎨 Modern Interface** - Splash screen, professional icons, silent background operations
-- **⚙️ Easy Mapping** - Visual configuration for mailboxes and archives
-- **🔒 Permission Check** - Built-in validator with step-by-step setup guide
+This tool **automates** the technical steps required for PST migration:
 
----
-
-## 🚀 Quick Start
-
-### 1. Download & Install
-Download `PST-Import-Tool-Setup.exe` from the [latest release](https://github.com/Andorrann/pst-import-releases/releases/latest) and run the installer.
-
-### 2. Get Your SAS URL
-1. Go to [Microsoft Purview Compliance Portal](https://compliance.microsoft.com)
-2. Navigate to **Data lifecycle management** → **Import**
-3. Click **New import job** → **Upload your data**
-4. Microsoft will provide a **SAS URL** - copy it
-
-### 3. Configure Permissions
-You need these roles in Microsoft 365:
-- **Purview**: eDiscovery Manager
-- **Exchange**: Organization Management or Compliance Management
-
-See the built-in guide for detailed instructions.
-
-### 4. Run the Tool
-1. Open PST Import Tool
-2. Go to **Setup** tab and paste your SAS URL
-3. Go to **Files & Upload** tab to scan for PST files
-4. Upload files to Azure
-5. Go to **Mapping** tab to configure mailbox mappings
-6. Generate CSV file
-7. Submit the CSV in Purview to start the import job
+- ✅ **Installs AzCopy** - Automatically downloads and configures Microsoft AzCopy
+- ✅ **Scans for PST files** - Finds PST files in common locations (Documents, Desktop, Outlook folders)
+- ✅ **Validates SAS URL** - Checks your Azure connection and permissions
+- ✅ **Uploads PST files** - Uses AzCopy to transfer files to Microsoft's cloud storage
+- ✅ **Generates CSV mapping** - Creates Microsoft Purview-compatible mapping files
+- ✅ **Manages credentials** - Securely stores SAS URLs with AES-256 encryption (locally)
+- ✅ **Tracks progress** - Real-time upload monitoring with detailed logs
 
 ---
 
-## 📚 Documentation
+## ❌ What This Software DOESN'T Do
 
-### Setup Guide
-The application includes a comprehensive setup guide accessible via:
-**Setup tab** → **"📖 Open Permissions Setup Guide"**
+This tool **does not** handle Microsoft 365 configuration:
 
-### Microsoft Documentation
-- [Network Upload for PST Files](https://learn.microsoft.com/en-us/purview/use-network-upload-to-import-pst-files)
-- [PST Import Overview](https://learn.microsoft.com/en-us/purview/import-pst-files)
-- [eDiscovery Permissions](https://learn.microsoft.com/en-us/purview/ediscovery-assign-permissions)
+- ❌ **Does NOT create Azure storage** - You must generate the SAS URL from Purview
+- ❌ **Does NOT configure permissions** - You must assign Purview/Exchange roles yourself
+- ❌ **Does NOT submit import jobs** - You must upload the CSV to Purview manually
+- ❌ **Does NOT modify mailboxes** - Import happens entirely within Microsoft's systems
+- ❌ **Does NOT store data externally** - Everything runs locally on your machine
+
+**You are responsible for:**
+- Getting the SAS URL from Microsoft Purview
+- Having the correct Microsoft 365 permissions (eDiscovery Manager + Exchange admin)
+- Submitting the final CSV file to Purview to start the import
 
 ---
 
-## 🔄 What's New in v1.1.0
+## 🔄 What's New in v1.1.1
 
-### ✨ New Features
-- **Splash Screen** - Animated loading screen with progress bar
-- **Professional Icons** - Visible in app, taskbar, shortcuts, and installer
-- **Credential Manager** - Save/reuse SAS URLs with AES-256 encryption
-- **Modern Dialogs** - Redesigned upload confirmation and completion
-- **Silent Operations** - No CMD windows during uploads or Azure operations
+### 🎨 Rebranding
+- **Application renamed** from "PST Import Tool for Purview" to **"AzCopy Manager"**
+- More focus on AzCopy technology and clearer naming
+- New repository structure (`Azcopy-manager` and `Azcopy-manager-releases`)
+- Application data folder renamed to `AzCopyManager`
 
 ### 🐛 Bug Fixes
-- CSV format now matches Microsoft Purview template exactly
-- "Use Selected" credential properly loads and validates URL
-- Automatic validation after loading saved credentials
+- **Fixed Windows Start Menu Icon** - Icon now displays correctly instead of default disk icon
+- **Updated Update System** - All update URLs now point to new repository
 
-[View Complete Changelog](https://github.com/Andorrann/PST-IMPORT-TOOL-O365/blob/main/CHANGELOG.md)
+### 🎨 UI/UX Improvements
+- **Modern "Check for Updates" Dialog** with centered text, Segoe UI font, and larger version display
+
+[View Complete Changelog](https://github.com/Andorrann/Azcopy-manager/blob/main/CHANGELOG.md)
 
 ---
 
@@ -117,76 +87,96 @@ Typically 30-90 days. The tool will warn you when it's about to expire.
 
 ### Where are my logs?
 ```
-C:\Users\<YourUsername>\Documents\PSTImportTool\Logs\
+C:\Users\<YourUsername>\Documents\AzCopyManager\Logs\
 ```
 
-### The upload is slow. Is this normal?
-Yes, upload speeds depend on:
-- Your internet connection
-- PST file size
-- Azure data center location
-- Network congestion
+---
 
-Large PST files (>10 GB) can take several hours.
+## 🔒 Privacy & Security - Why This Tool is Safe
+
+### Why I Created This Tool
+
+As an IT administrator, **I was looking for a PST migration tool that I could trust**. When dealing with PST files and SAS URLs (which grant access to company data), **security is critical**.
+
+I couldn't find an open-source tool that met my security requirements, so I built one myself with **privacy and security as the top priority**.
+
+### 🛡️ Zero External Connections
+
+This software **runs entirely on your local machine** with **NO external servers**:
+
+- ❌ **No analytics** - We don't track usage, errors, or any metrics
+- ❌ **No telemetry** - Zero data sent to any server (ours or third-party)
+- ❌ **No remote logging** - Logs stay on YOUR computer only
+- ❌ **No API calls** - Except Microsoft's own APIs (AzCopy, Azure Storage, GitHub for updates)
+- ❌ **No cloud storage** - Configuration and credentials are stored locally
+
+**The only external connections are:**
+1. **Microsoft AzCopy** (official Microsoft tool for uploads)
+2. **Azure Blob Storage** (YOUR Microsoft-managed storage via SAS URL)
+3. **GitHub** (for update checks only - optional)
+
+### 🔐 Encrypted Credential Storage
+
+**SAS URLs contain sensitive access credentials.** We take their protection seriously:
+
+- ✅ **AES-256 encryption** - Industry-standard encryption for stored credentials
+- ✅ **Local storage only** - Credentials are saved on YOUR computer in `C:\Users\<You>\Documents\AzCopyManager\Config\`
+- ✅ **No cloud sync** - Credentials NEVER leave your machine
+- ✅ **User-controlled** - You can delete stored credentials anytime via "Manage Keys"
+
+**Even if someone accesses your computer**, the SAS URLs are encrypted and cannot be read without the encryption key (which is also stored locally and tied to your Windows user account).
+
+### 📂 What Data is Stored Locally
+
+The application only stores data **on your computer**:
+
+| Data | Location | Encrypted |
+|------|----------|-----------|
+| SAS URLs | `Documents\AzCopyManager\Config\` | ✅ Yes (AES-256) |
+| Logs | `Documents\AzCopyManager\Logs\` | ❌ No (diagnostic info only) |
+| AzCopy | `Documents\AzCopyManager\AzCopy\` | ❌ No (Microsoft binary) |
+
+**No data is ever sent to any server we control.** We don't even have a server.
+
+### 🔍 Open Source Philosophy
+
+The source code is available for review:
+- **Main repository**: [github.com/Andorrann/Azcopy-manager](https://github.com/Andorrann/Azcopy-manager)
+
+You can inspect the code yourself to verify:
+- No hidden network calls
+- No data exfiltration
+- No telemetry or tracking
+- Proper encryption implementation
+
+### ✅ Trust, But Verify
+
+If you're security-conscious (and you should be!), you can:
+
+1. **Review the source code** on GitHub
+2. **Monitor network traffic** during runtime (you'll see only Microsoft connections)
+3. **Check stored files** in `Documents\AzCopyManager\` (everything is local)
+4. **Build from source** if you prefer to compile it yourself
+
+### 🎯 Our Commitment
+
+**Your data is YOUR data.**
+
+- We **do not** have access to your PST files
+- We **do not** have access to your SAS URLs
+- We **do not** collect any information about you
+- We **cannot** see what you upload
+
+**This tool is a local utility that interfaces with Microsoft's infrastructure only.** All PST uploads go directly from your computer to **Microsoft's Azure storage** using **your SAS URL**.
 
 ---
 
-## 🛠️ Troubleshooting
+## 📜 License
 
-### "SAS URL validation failed"
-- Check that you copied the complete URL (it's very long!)
-- Ensure the URL hasn't expired
-- Verify you generated it from Purview (not Azure Portal)
+This tool is provided **as-is** without warranties. It is a community tool and is not officially affiliated with or supported by Microsoft Corporation.
 
-### "Missing permissions"
-- Verify you have eDiscovery Manager role in Purview
-- Check Exchange permissions (Organization Management or Compliance Management)
-- Wait 15-30 minutes for role propagation
-- Sign out and back into Microsoft 365
-
-### Application won't start
-- Check Windows Event Viewer for errors
-- Ensure .NET Framework 4.7.2+ is installed
-- Try running as Administrator
-- Reinstall the application
-
-### Upload fails or stalls
-- Check your internet connection
-- Verify SAS URL hasn't expired
-- Check firewall/proxy settings
-- Review application logs for detailed errors
+**⚠️ Disclaimer**: Microsoft, Microsoft 365, Purview, and Exchange are trademarks of Microsoft Corporation.
 
 ---
 
-## 📜 License & Privacy
-
-- This tool is provided **as-is** without warranties
-- No data is collected or sent to third parties
-- All PST files are uploaded directly to **your** Microsoft-managed Azure storage
-- Logs are stored **locally** on your computer only
-
----
-
-## 🔗 Related Tools
-
-- [Microsoft Network Upload Tool](https://www.microsoft.com/en-us/download/details.aspx?id=54845) (Official Microsoft tool)
-- [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) (Command-line utility)
-- [PST Capture](https://www.microsoft.com/en-us/download/details.aspx?id=57916) (Microsoft PST export tool)
-
----
-
-## 📞 Support
-
-For technical support:
-1. Check the application logs
-2. Review the FAQ above
-3. Consult [Microsoft Documentation](https://learn.microsoft.com/en-us/purview/import-pst-files)
-4. Contact your IT administrator
-
----
-
-**⚠️ Important**: This is a community tool and is not officially affiliated with or supported by Microsoft Corporation. Microsoft, Microsoft 365, Purview, and Exchange are trademarks of Microsoft Corporation.
-
----
-
-**Made with ❤️ for IT administrators managing Microsoft 365 migrations**
+**Made with ❤️ by an IT admin who values security and privacy**
