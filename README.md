@@ -9,6 +9,16 @@ This tool simplifies the complex process of uploading PST files to Microsoft's c
 
 ---
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6a7818bc-fdec-4f99-a026-7804aae55470" alt="Preview 1" width="800">
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/acb85377-3da0-4abe-b865-c13ff0a14ec6" alt="Preview 2" width="800">
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/32ddceed-9e28-42ae-a86b-a154c5980068" alt="Preview 3" width="800">
+</p>
+
 ## 📥 Download
 
 **[⬇️ Download Latest Version (v1.1.1)](https://github.com/Andorrann/Azcopy-manager-releases/releases/latest)**
